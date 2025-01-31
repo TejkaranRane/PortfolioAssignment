@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: gray;
+}
+
+#nav-item {
+  display: flex;
+  gap: 2rem;
+  padding: 0 4em;
+  font-size: larger;
+  color: white;
+}
+
+@media (max-width:1500px) {
+  .nav-bar {
+    padding: 0 3em; /* Adjusted padding for better responsiveness */
+  }
+}
+
+@media (max-width:1000px) {
+  .nav-items {
+    display: none; /* Consider adding a hamburger menu */
+  }
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+
+.profile {
+  margin-left: 40%;
+  width: 60%;
+  height: 100vh;
+  position: absolute;
+  border: 2px solid white;
+}
+
+#name,
+#surname {
+  padding-top: 100px;
+  font-size: 3.8rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 40px;
+  color: white;
+  font-family: cursive;
+}
+
+#surname {
+  margin-left: 65px;
+}
+
+#info,
+#and {
+  padding-top: 80px;
+  color: white;
+  margin-left: 60px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+#and {
+  margin-left: 110px;
+}
+
+@media (max-width:1300px) {
+  #home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem; /* Fixed padding-top */
+    padding-bottom: 3rem;
+  }
+}
+
+.background {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+#text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 50%;
+  margin-left: 25%;
+  flex-direction: column;
+  border-radius: 5%;
+}
+
+#heading {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 5%;
+}
+
+.about-info {
+  text-align: center;
+  padding-top: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr {
+  border: 0.1px solid black;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#para2 {
+  padding-top: 0%;
+  padding-bottom: 10%;
+}
+
+@media (max-width:1300px) {
+  #about {
+    padding-top: 30px;
+    color: var(--bgOrange);
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+#portfolio-head {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.folio-img {
+  border: 1px solid white;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 40px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 50%;
+  margin-left: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  gap: 20px;
+  text-align: center;
+}
+
+#project1,
+#project2,
+#project3,
+#project4 {
+  margin: 20px;
+  background-color: white;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.pro-head {
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pro-des {
+  padding-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+@media (max-width:1300px) {
+  #portfolio {
+    margin: 0;
+    padding: 2em;
+    flex-direction: column;
+  }
+
+  .projects {
+    grid-template-columns: 1fr; /* Stack projects on smaller screens */
+  }
+}
+
+#foot-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.cont-img {
+  width: 50px;
+  background-size: cover;
+}
+
+#footer {
+  background-color: #535c87;
+  text-align: center;
+  height: 200px;
+}
+
+@media (max-width:1300px) {
+  #footer {
+    padding: 0.5rem;
+  }
+}
